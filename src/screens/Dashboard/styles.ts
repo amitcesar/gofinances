@@ -5,11 +5,11 @@ flex: 1;
 justify-content: center;
 align-items: center;
 
-background-color: ${ (props) => props.theme.colors.PRIMARY};
+background-color: ${ ({theme}) => theme.colors.BACKGROUND };
 `
 
 export const Title = styled.Text`
+font-family: ${ ({theme}) => theme.fonts.BOLD };
 font-size: 24px;
-font-weight: bold;
-color: purple
+color: ${ ({theme}) => theme.colors.TITLE};
 `;

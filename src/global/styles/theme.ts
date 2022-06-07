@@ -19,5 +19,10 @@ export default {
 
     BACKGROUND: '#F0F2F5',
 
+  },
+  fonts :{
+    REGULAR: 'Poppins_400Regular',
+    MEDIUM: 'Poppins_500Medium',
+    BOLD: 'Poppins_700Bold',
   }
 }
