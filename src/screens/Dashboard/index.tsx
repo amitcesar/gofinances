@@ -8,7 +8,8 @@ import {
   Photo,
   User,
   UserGreeting,
-  UserName
+  UserName,
+  Icon
 } from './styles'
 
 const uri = 'https://avatars.githubusercontent.com/u/20031882?v=4'
@@ -24,6 +25,7 @@ export function Dashboard() {
             <UserName>brmonte</UserName>
           </User>
         </UserInfo>
+        <Icon name='power' />
       </UserWrapper>
      </Header>
    </Container>
