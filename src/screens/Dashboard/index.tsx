@@ -10,7 +10,8 @@ import {
   User,
   UserGreeting,
   UserName,
-  Icon
+  Icon,
+  HighlightCards
 } from './styles'
 
 const uri = 'https://avatars.githubusercontent.com/u/20031882?v=4'
@@ -30,7 +31,16 @@ export function Dashboard() {
       </UserWrapper>
      </Header>
 
-     <HighlightCard/>
+      <HighlightCards
+        horizontal
+        showsHorizontalScrollIndicator={false}
+        contentContainerStyle={{paddingHorizontal: 24}}
+      >
+        <HighlightCard/>
+        <HighlightCard/>
+        <HighlightCard/>
+      </HighlightCards>
+     
    </Container>
   )
 }
