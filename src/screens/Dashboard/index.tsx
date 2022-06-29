@@ -31,14 +31,10 @@ export function Dashboard() {
       </UserWrapper>
      </Header>
 
-      <HighlightCards
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        contentContainerStyle={{paddingHorizontal: 24}}
-      >
-        <HighlightCard/>
-        <HighlightCard/>
-        <HighlightCard/>
+      <HighlightCards >
+          <HighlightCard/>
+          <HighlightCard/>
+          <HighlightCard/>
       </HighlightCards>
      
    </Container>
