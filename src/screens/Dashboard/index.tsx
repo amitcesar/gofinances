@@ -1,6 +1,7 @@
 
 import React from 'react'
 import { HighlightCard } from '../../components/HighlightCard'
+import { TransactionCard } from '../../components/TransactionCard'
 import {
   Container,
   Header,
@@ -11,7 +12,9 @@ import {
   UserGreeting,
   UserName,
   Icon,
-  HighlightCards
+  HighlightCards,
+  Transactions,
+  Title,
 } from './styles'
 
 const uri = 'https://avatars.githubusercontent.com/u/20031882?v=4'
@@ -52,9 +55,16 @@ export function Dashboard() {
           lastTransaction='01 à 16 de abril'
           type='total'
           />
-     
+    
       </HighlightCards>
      
+     <Transactions>
+        <Title>
+          Listagem
+        </Title>
+
+        <TransactionCard />
+     </Transactions>
    </Container>
   )
 }
